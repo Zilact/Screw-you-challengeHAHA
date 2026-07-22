@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    background:#050505;
+
+    color:white;
+
+    font-family:Consolas, monospace;
+
+}
+
+body{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+#app{
+
+    width:100%;
+    height:100%;
+
+}
+
+/* Smooth fade */
+
+.fade{
+
+    animation:fade .45s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+input{
+
+    background:#101010;
+
+    color:white;
+
+    border:1px solid #444;
+
+    outline:none;
+
+    border-radius:10px;
+
+    padding:14px;
+
+    width:320px;
+
+    text-align:center;
+
+    font-size:17px;
+
+}
+
+input:focus{
+
+    border-color:white;
+
+}
+
+button{
+
+    margin-top:15px;
+
+    padding:13px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:white;
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.message{
+
+    margin-top:18px;
+
+    color:#9f9f9f;
+
+    min-height:22px;
+
+}.access,
+.stage1{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+}
+
+.access h1{
+
+    font-size:42px;
+    font-weight:normal;
+    margin-bottom:15px;
+
+}
+
+.access p{
+
+    color:#888;
+    margin-bottom:20px;
+
+}
+
+#accessButton{
+
+    width:55px;
+    margin-top:20px;
+    font-size:24px;
+
+}
